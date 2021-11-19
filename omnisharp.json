@@ -1,0 +1,6 @@
+{
+    "RoslynExtensionsOptions": {
+        "EnableAnalyzersSupport": true,
+        "LocationPaths": ["./analyzer-1.11.1/"]
+    }
+}
