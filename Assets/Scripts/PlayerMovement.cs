@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController cController;
-    public float speed = 10.5f;
+    public Transform camera;
+    public float speed = 10f;
+    public float smoothTimeForTurn = 0.15f;
+    float velocityForTurn;
     public float jumpForce = 3.5f;
     private float horizontalInput;
     private float verticalInput;
@@ -22,14 +25,15 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(verticalInput, 0f, horizontalInput).normalized;
+        Vector3 direction = new Vector3(verticalInput, 0f, -horizontalInput).normalized;
 
         if (direction.magnitude >= 0.1f) {
-            float targetAngle = Mathf.Atan2(-direction.z, direction.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+            float targetAngle = Mathf.Atan2(-direction.z, direction.x) * Mathf.Rad2Deg + camera.eulerAngles.y;
+            float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref velocityForTurn, smoothTimeForTurn);
+            transform.rotation = Quaternion.Euler(0f, smoothAngle, 0f);
 
-
-            cController.Move(direction * speed * Time.deltaTime);
+            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            cController.Move(moveDirection.normalized * speed * Time.deltaTime);
         }
 
         // perform a jump
