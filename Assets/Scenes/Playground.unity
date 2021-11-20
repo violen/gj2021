@@ -282,7 +282,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118967704}
-  m_LocalRotation: {x: 0.10705907, y: -0.024956886, z: 0.0026881625, w: 0.99393576}
+  m_LocalRotation: {x: 0.06603131, y: 0.8855002, z: -0.44033754, w: 0.13278618}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3.4690108, z: -8.4867525}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 7.01, z: -3.6}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -599,7 +599,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016760902}
-  m_LocalRotation: {x: 0.15703031, y: 1e-45, z: -0, w: 0.9875938}
+  m_LocalRotation: {x: 0.060453735, y: 0.86517346, z: -0.48604587, w: 0.10760911}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -679,8 +679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3.4690108, z: -8.4867525}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 7.01, z: -3.6}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -787,7 +787,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_YAxis:
-    Value: 0.84
+    Value: 1
     m_SpeedMode: 0
     m_MaxSpeed: 2
     m_AccelTime: 0.2
@@ -838,8 +838,8 @@ MonoBehaviour:
     m_RecenteringTime: 2
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
-  m_BindingMode: 3
-  m_SplineCurvature: 0.346
+  m_BindingMode: 5
+  m_SplineCurvature: 0.238
   m_Orbits:
   - m_Height: 7.01
     m_Radius: 3.6
@@ -860,7 +860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191888946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 3.7437687, z: -9.432753}
+  m_LocalPosition: {x: 1.9741163, y: 7.26, z: 2.661313}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 118967706}
@@ -976,8 +976,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517670531}
-  m_LocalRotation: {x: 0.12898028, y: -0.016816933, z: 0.0014120558, w: 0.9915036}
-  m_LocalPosition: {x: 2.76, y: 3.7437687, z: -9.432753}
+  m_LocalRotation: {x: 0.066031285, y: 0.8855002, z: -0.44033757, w: 0.13278618}
+  m_LocalPosition: {x: 1.9741163, y: 7.26, z: 2.661313}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754011378}
-  m_LocalRotation: {x: 0.17517814, y: 0.00065284764, z: -0.000116160896, w: 0.9845365}
+  m_LocalRotation: {x: 0.062090978, y: 0.8561528, z: -0.50192636, w: 0.10591068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1259,8 +1259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9384ab8608cdc3d479fe89cd51eed48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3.4690108, z: -8.4867525}
+  m_BindingMode: 5
+  m_FollowOffset: {x: 0, y: 7.01, z: -3.6}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1324,6 +1324,22 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4899a36b18af6d04b8660ef92bb8dadb, type: 2}
+    - target: {fileID: 6240754544847406699, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.8322441
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240754544847406699, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240754544847406699, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.663
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240754544847406699, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.46
+      objectReference: {fileID: 0}
     - target: {fileID: 6240754545695098011, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1334,15 +1350,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6240754546451000072, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.76
+      value: 2.856
       objectReference: {fileID: 0}
     - target: {fileID: 6240754546451000072, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27475798
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6240754546451000072, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.946
+      value: -0.829
       objectReference: {fileID: 0}
     - target: {fileID: 6240754546451000072, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1371,6 +1387,14 @@ PrefabInstance:
     - target: {fileID: 6240754546451000072, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240754546451000073, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_Height
+      value: 0.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240754546451000073, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
+      propertyPath: m_Radius
+      value: 0.5199568
       objectReference: {fileID: 0}
     - target: {fileID: 6240754546451000074, guid: 6a2a098683148ad44a4603a67343cb75, type: 3}
       propertyPath: camera
