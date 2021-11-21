@@ -23,12 +23,10 @@ public class NPCFollow : MonoBehaviour
         float targetAngle = Mathf.Atan2(-targetDirection.z, targetDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
-        
 
-        Vector3 direction = Vector3.MoveTowards(transform.forward, targetDirection, moveSpeed * Time.deltaTime);
-        // direction.y = target.position.y;
-        Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-        cController.Move(direction.normalized);
-        // transform.position = direction;
+        Vector3 direction = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        transform.position = direction;
+
+        // cController.Move(transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 }
