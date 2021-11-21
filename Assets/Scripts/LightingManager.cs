@@ -20,6 +20,12 @@ public class LightingManager : MonoBehaviour
         }
     }
 
+    public bool IsDayTime() {
+        if (timeOfDay >= 7 && timeOfDay <= 20) 
+            return true;
+        return false;
+    }
+
     private void UpdateLighting(float timeOfDay) {
         RenderSettings.ambientLight = preset.ambientColor.Evaluate(timeOfDay);
         RenderSettings.fogColor = preset.fogColor.Evaluate(timeOfDay);
